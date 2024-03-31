@@ -1,0 +1,303 @@
+@charset "UTF-8";
+
+ .list a:hover{
+    color: #F09F9F;
+}
+
+.pc-top{
+    display: none;
+}
+
+body{
+    background-color: #FFFDEC;
+}
+
+.center{
+    text-align: center;
+}
+.font-kokoro{
+    font-family: "ab-kokoro-no2", sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+
+.font-bokutyou{
+    font-family: bokutoh-rera, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+ .font-english{
+     font-family: "Bahiana", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      
+.header img{
+    width: 100%; height: 100%;
+}
+
+.top-1-img1{
+    display: none;
+}
+
+.top-1-img2{
+    display: none;
+}
+.top{
+    background-image: url(images/top_back.png);
+    background-position: bottom;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 20px;
+}
+.news{
+    text-align: center; 
+
+}
+.top-4-img1{
+    display: none;
+}
+.top-4-img2{
+    margin: 30px 0 30px;
+    text-align: center;
+}
+.top-4-img2 img{
+
+    width: 298px; height: 127px;
+}
+
+.flex img{
+    width: 111px; height: 55px;
+}
+
+.flex{
+    display: flex;
+   text-align: center;
+}
+.map{
+    max-width: 350px;
+    margin: 0 auto;
+}
+.accses{
+    max-width: 330px;
+    margin: 0 auto;
+    padding-left: 40px;
+}
+.acces-1{
+    margin: 20px 0 20px;
+}
+
+footer{
+    background-color:#EBE937;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.list{
+    max-width: 230px;
+    margin: 0 auto;
+}
+
+.list ul {
+    list-style: url(images/sankaku.png);
+  
+   }
+.list ul li{
+   text-align: left;
+    margin-bottom: 10px;
+  
+}
+
+.list a{
+    text-decoration-line: none;
+    color: black;
+}
+
+/*==================================================
+スライダーのためのcss
+===================================*/
+.slider {/*横幅94%で左右に余白を持たせて中央寄せ*/
+    width:94%;
+     margin:0 auto;
+ }
+ 
+ .slider img {
+     width:100%;/*スライダー内の画像を横幅100%に*/
+     height:auto;
+ }
+ 
+ /*slickのJSで書かれるタグ内、スライド左右の余白調整*/
+ 
+ .slider .slick-slide {
+     margin:0 10px;
+ }
+ 
+ /*矢印の設定*/
+ 
+ /*戻る、次へ矢印の位置*/
+ .slick-prev, 
+ .slick-next {
+     position: absolute;/*絶対配置にする*/
+     top: 42%;
+     cursor: pointer;/*マウスカーソルを指マークに*/
+     outline: none;/*クリックをしたら出てくる枠線を消す*/
+     border-top: 2px solid #F09F9F;/*矢印の色*/
+     border-right: 2px solid #F09F9F;/*矢印の色*/
+     height: 15px;
+     width: 15px;
+ }
+ 
+ .slick-prev {/*戻る矢印の位置と形状*/
+     left: -1.5%;
+     transform: rotate(-135deg);
+ }
+ 
+ .slick-next {/*次へ矢印の位置と形状*/
+     right: -1.5%;
+     transform: rotate(45deg);
+ }
+ 
+ /*ドットナビゲーションの設定*/
+ 
+ .slick-dots {
+     text-align:center;
+     margin:20px 0 0 0;
+ }
+ 
+ .slick-dots li {
+     display:inline-block;
+     margin:0 5px;
+ }
+ 
+ .slick-dots button {
+     color: transparent;
+     outline: none;
+     width:8px;/*ドットボタンのサイズ*/
+     height:8px;/*ドットボタンのサイズ*/
+     display:block;
+     border-radius:50%;
+     background:#F09F9F;/*ドットボタンの色*/
+ }
+ 
+ .slick-dots .slick-active button{
+     background:#EBE937;/*ドットボタンの現在地表示の色*/
+ }
+ .p-12{
+    font-size: 12px;
+ }
+
+
+ .p-14{
+    font-size: 14px;
+ }
+ 
+ .h1{
+    font-size: 24px;
+    margin-bottom: 10px;
+    padding: 0 10px 0;
+ }
+ .flex{
+    padding-left: 10px;
+ }
+ .top-3{
+    max-width: 340px;
+    margin: 0 auto;
+ }
+
+ @media(min-width: 800px)
+ {
+.pc-top{
+    display: contents;
+    width: 100%; height: 100%;
+}
+.sp-top{
+    display: none;
+}
+.top{
+    background-image: url(images/pc_top_back.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+
+.top-1{
+    background-image: none;
+}
+
+.p-14{
+    font-size: 38px;
+}
+
+.p-12{
+font-size: 24px;
+}
+.top-3{
+    max-width: 1200px;
+}
+
+.list{
+    max-width: 450px;
+    padding-bottom: 30px;
+}
+.list ul li{
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.top-1{
+    display: flex;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.top-1-img1{
+    display: flex;
+}
+
+.top-1-img2{
+    display: flex;
+}
+
+.top-4{
+    display: flex;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.top-4-img1{
+    display: flex;
+}
+
+.top-4-img1 img{
+   width: 297px; height: 268px;
+}
+
+.top-4-img2{
+    display: flex;
+}
+.top-4-img2 img{
+    width: 597px; height: 254px;
+}
+
+.h1{
+    font-size: 64px;
+}
+
+.flex img{
+    width: 267px; height: 132px;
+}
+.accses{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.flex{
+    padding-left: 150px;
+}
+
+.flex2{
+    display: flex;
+}
+.p-13{
+    font-size: 24px;
+}
+ }
